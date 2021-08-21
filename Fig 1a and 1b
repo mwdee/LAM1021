@@ -1,0 +1,343 @@
+Options()
+ {
+  Resolution=1;
+ };
+ Plot()
+ {
+  Outlier_Model("General",T(5),U(0,4),"t");
+  Sequence("Outer Tree-rings")
+  {
+   Boundary("Start Outer Tree-rings");
+   Phase("Outer Tree-rings Phase")
+   {
+    R_Date("TO-116", 1440, 50)
+    {
+     Outlier(0.05);
+     color="DarkGoldenRod";
+    };
+    R_Date("TO-117", 1030, 50)
+    {
+     Outlier(0.05);
+     color="DarkGoldenRod";
+    };
+    R_Date("TO-118", 990, 30)
+    {
+     Outlier(0.05);
+     color="DarkGoldenRod";
+    };
+    R_Date("TO-119", 1040, 30)
+    {
+     Outlier(0.05);
+     color="DarkGoldenRod";
+    };
+    Sum("Outer Tree-rings (Average)")
+    {
+     color="DarkGoldenRod";
+    };
+   };
+   Boundary("End Outer Tree-rings");
+  };
+  Sequence("Sod")
+  {
+   Boundary("Start Sod");
+   Phase("Sod Phase")
+   {
+    R_Date("T-530", 950, 90)
+    {
+     Outlier(0.05);
+     color="YellowGreen";
+    };
+    R_Date("T-531", 950, 50)
+    {
+     Outlier(0.05);
+     color="YellowGreen";
+    };
+    R_Date("T-817", 1300, 70)
+    {
+     Outlier(0.05);
+     color="YellowGreen";
+    };
+    R_Date("T-818", 1320, 80)
+    {
+     Outlier(0.05);
+     color="YellowGreen";
+    };
+    Sum("Sod (Average)")
+    {
+     color="YellowGreen";
+    };
+   };
+   Boundary("End Sod");
+  };
+  R_Date("Bone (St-2665)", 1085, 110)
+  {
+   Outlier(0.05);
+   color="LightBlue";
+  };
+  Sequence("Wood")
+  {
+   Boundary("Start Wood");
+   Phase("Wood Phase")
+   {
+    R_Date("S-1092", 1410, 90)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1346", 1330, 80)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1109", 1305, 60)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1343", 1250, 70)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1090", 1230, 70)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1118", 1210, 100)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1357", 1160, 60)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1120", 1095, 100)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1110", 1090, 60)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1093", 1070, 65)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1113", 1040, 50)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1111", 960, 105)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1091", 865, 65)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1340", 1050, 65)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("S-1355", 955, 100)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("Qu-350", 1400, 80)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    R_Date("WAT-436", 1080, 40)
+    {
+     Outlier(0.05);
+     color="Red";
+    };
+    Sum("Wood (Average)")
+    {
+     color="Red";
+    };
+   };
+   Boundary("End Wood");
+  };
+  Sequence("Burnt Wood")
+  {
+   Boundary("Start Burnt Wood");
+   Phase("Burnt Wood Phase")
+   {
+    R_Date("S-1101", 1075, 60)
+    {
+     Outlier(0.05);
+     color="DarkBrown";
+    };
+    R_Date("S-1119", 1375, 115)
+    {
+     Outlier(0.05);
+     color="DarkBrown";
+    };
+    R_Date("S-1358", 1345, 65)
+    {
+     Outlier(0.05);
+     color="DarkBrown";
+    };
+    R_Date("S-1115", 1210, 45)
+    {
+     Outlier(0.05);
+     color="DarkBrown";
+    };
+    R_Date("S-1342", 1200, 100)
+    {
+     Outlier(0.05);
+     color="DarkBrown";
+    };
+    R_Date("S-1114", 1120, 120)
+    {
+     Outlier(0.05);
+     color="DarkBrown0";
+    };
+    R_Date("S-1112", 1105, 45)
+    {
+     Outlier(0.05);
+     color="DarkBrown";
+    };
+    Sum("Burnt Wood (Average)")
+    {
+     color="DarkBrown";
+    };
+   };
+   Boundary("End Burnt Wood");
+  };
+  Sequence("Charcoal")
+  {
+   Boundary("Start Charcoal");
+   Phase("Charcoal Phase")
+   {
+    R_Date("T-310", 1310, 130)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("T-306", 1210, 110)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("T-309", 1240, 130)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("T-364", 1050, 70)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("T-324", 1130, 70)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("T-325", 1080, 70)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("T-326", 1250, 70)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("T-327", 870, 70)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("T-366", 1090, 90)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("T-393", 890, 70)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("T-367", 1130, 70)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("S-1108", 1300, 110)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("S-1350", 1320, 60)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("S-1102", 1130, 115)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("S-1339", 1330, 105)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("S-1348", 1235, 65)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("S-1347", 1195, 60)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("S-1106", 1185, 110)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("S-1352", 1160, 65)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("S-1127", 1185, 105)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("S-1351", 1300, 60)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    R_Date("Beta-292106", 1150, 30)
+    {
+     Outlier(0.05);
+     color="Black";
+    };
+    Sum("Charcoal (Average)")
+    {
+     color="Black";
+    };
+   };
+   Boundary("End Charcoal");
+  };
+ };
